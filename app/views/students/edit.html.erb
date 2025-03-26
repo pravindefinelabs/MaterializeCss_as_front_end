@@ -7,15 +7,29 @@
         <div class="row">
           <div class="input-field col s12 ">
             <i class="material-icons prefix">account_circle</i>
-            <%= f.label :name, "Full Name", id: "full_name", class: "validate" %>
+            <%= f.label :name, "Full Name", id: "full_name", class: "validate active" %>
             <%= f.text_field :name %>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">email</i>
-            <%= f.label :email, id: "email", class: "validate" %>
-            <%= f.text_field :email %>
+            <%= f.label :email, id: "email", class: "validate active" %>
+            <%= f.email_field :email %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <%= f.label :password, id: "password", class: "validate" %>
+            <%= f.password_field :password %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <%= f.label :password_confirmation, "Confirm Password", id: "password_confirmation", class: "validate" %>
+            <%= f.password_field :password_confirmation %>
           </div>
         </div>
         <div class="row">
