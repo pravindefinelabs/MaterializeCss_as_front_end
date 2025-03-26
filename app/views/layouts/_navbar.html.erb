@@ -28,3 +28,14 @@
     </div>
   </div>
 </nav>
+<% flash.each do |type, message| %>
+  <div class="container">
+    <div class="row sign-up">
+      <div class="col s12 m12 l12">
+        <div class="card-panel <%= type == 'success' ? 'green lighten-2' : 'red lighten-1' %>" id = "fade-out" >
+          <span class="white-text"><%= message %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
